@@ -64,7 +64,7 @@ func PrettyPrintMatrix(matrix [][]int) {
 	}
 }
 
-func getMedian(intSlice []int) int {
+func GetMedian(intSlice []int) int {
 	sliceLength := len(intSlice)
 	if (sliceLength % 2) == 0 {
 		lowerMiddleIndex := int((float64(sliceLength) / 2) - 1)
@@ -80,7 +80,7 @@ func getMedian(intSlice []int) int {
 
 }
 
-func getAverage(intSlice []int) int {
+func GetAverage(intSlice []int) int {
 	sliceLength := len(intSlice)
 
 	total := 0
