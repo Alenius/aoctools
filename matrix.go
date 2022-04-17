@@ -7,7 +7,7 @@ func PrettyPrintMatrix[K any](matrix [][]K) {
 	for i := 0; i < noOfRows; i++ {
 		noOfColumns := len(matrix[i])
 		for j := 0; j < noOfColumns; j++ {
-			fmt.Print(matrix[j][i])
+			fmt.Print(matrix[i][j])
 		}
 		fmt.Println("")
 	}
