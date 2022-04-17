@@ -3,7 +3,6 @@ package aoctools
 import (
 	"bufio"
 	"fmt"
-	"log"
 	"math"
 	"os"
 	"strings"
@@ -50,18 +49,6 @@ func ReadCommaSeparatedFile(filename string) []string {
 	}
 
 	return lines
-}
-
-func PrettyPrintMatrix(matrix [][]int) {
-	noOfRows := len(matrix)
-	for i := 0; i < noOfRows; i++ {
-		noOfColumns := len(matrix[i])
-		for j := 0; i < noOfColumns; i++ {
-			log.Print(matrix[i][j])
-			log.Print(" ")
-		}
-		log.Println("")
-	}
 }
 
 func GetMedian(intSlice []int) int {
